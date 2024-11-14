@@ -10,7 +10,7 @@ formulario.addEventListener("submit", function validar(event){
         alert("El texto tiene que tener una longitud mayor a 3 caracteres");
         event.preventDefault(); }
    });
-fetch('https://dummyjson.com/recipes')
+const url = fetch('https://dummyjson.com/recipes')
 let recetas_seccion = document.querySelector(".recetas_seccion");
 let cargar_mas = document.querySelector("#cargar_mas");
 fetch(url)
@@ -23,13 +23,13 @@ fetch(url)
     for(let i=0; dato.length; i++){
         recipe+= `
         <article class="recipe_card">
-        <img src="${dato[i].image}" alt="${dato[i].name}"
-        <div class="recetas_seccion">
+        <img src="${dato[i].image}" alt="${dato[i].name}">
+        <div class="recetas_info">
         <h3>${dato[i].id}</h3>
         <p>Dificultad: ${dato[i].difficulty}</p>
-        <a href="./resultados.html?idreceta=${dato[i].id}">Ver detalle</a>
+        <a href="./resultados.html?idReceta=${dato[i].id}">Ver detalle</a>
         </div>
-        </article>`
+        </article>`;
     }
     recetas_seccion.innerHTML += recipe;
 })
