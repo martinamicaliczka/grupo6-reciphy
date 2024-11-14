@@ -3,33 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reicphy</title>
+    <title>Reciphy</title>
     <link rel="stylesheet" href="./css/archivo.css">
 </head>
-<script src="./js/archivo.js"></script>
 <body>
     <header class="encabezado">
-    <h1 class="titulo">Reicphy</h1>
+    <h1 class="titulo">Reciphy</h1>
     <div class="logo">
-        <img id="img" src="" alt="logo">
+        <img id="img" src="./img/logo.jpeg" alt="logo">
     </div>
-    <form class="formulario" action="search" action="" method="get">
+    <form class="formulario" action="resultados.html" method="get">
         <input type="text" name="Buscar" id="Buscar" placeholder="Buscar">
-        <button id="boton1" type="summit">Enviar</button> 
+        <button id="enviar" type="submit">Enviar</button> 
     </form>
     <nav class="navegacion">
-        <a class="link" href="">Home</a>
+        <a class="link" href="./index.html">Home</a>
         <a class="link" href="">Categorias</a>
         <a class="link" href="">Log in</a>
         <a class="link" href="">Registro</a>
     </nav>
 </header>
 <main class="principal">
+<h1 class="titulo_home">Recetas</h1>
+<div class="recetas_seccion">
 
+</div>
+<button id="cargar_mas">Cargar Más</button>
 </main>
 <footer>
     <p class="integrantes">Integrantes del equipo: Ema Fresco, Martina Michaliczka y Lola Otzet</p>
 </footer>
-</script>
+<script src="./js/archivo.js"></script>
 </body>
 </html>
