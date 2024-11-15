@@ -1,0 +1,61 @@
+body{
+    margin: 0%;
+}
+
+.logo{
+  background-color: #ffc5f0;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+.titulo{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.navegacion{
+    display: flex;
+    justify-content:space-evenly ;
+    margin: 20px;
+}
+.link{
+    text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal
+}
+a{
+    color: black;
+}
+.formularioIndex{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.recetas_seccion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.titulo_home{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal
+    
+}
+.imagenComida{
+    height: 400px;
+}
+.recipe_card{
+    border: ;
+}

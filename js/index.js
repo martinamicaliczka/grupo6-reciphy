@@ -30,7 +30,7 @@ function buscarFetch(url) {
             for (let i = 0; i < dato.length; i++) {
                 recipe += `
         <article class="recipe_card">
-        <img src="${dato[i].image}" alt="${dato[i].name}">
+        <img class="imagenComida" src="${dato[i].image}" alt="${dato[i].name}">
         <div class="recetas_info">
         <h3>${dato[i].id}</h3>
         <p>Dificultad: ${dato[i].difficulty}</p>
