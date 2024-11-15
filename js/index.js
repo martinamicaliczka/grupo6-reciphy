@@ -34,7 +34,7 @@ function buscarFetch(url) {
         <div class="recetas_info">
         <h3>${dato[i].id}</h3>
         <p>Dificultad: ${dato[i].difficulty}</p>
-        <a href="./resultados.html?idReceta=${dato[i].id}">Ver detalle</a>
+        <a href="./detalle.html?idReceta=${dato[i].id}">Ver detalle</a>
         </div>
         </article>`;
             }
