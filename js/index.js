@@ -14,7 +14,7 @@ formularioIndex.addEventListener("submit", function validar(event) {
 
 //API
 let limit = 10
-let url = (`https://dummyjson.com/recipes?limit=${limit}&skip=0&select=name,image`);
+let url = (`https://dummyjson.com/recipes?limit=${limit}&skip=0&select=name,image,difficulty`);
 let recetas_seccion = document.querySelector(".recetas_seccion");
 let cargar_mas = document.querySelector("#cargar_mas");
 
@@ -25,6 +25,7 @@ function buscarFetch(url) {
             return data.json();
         })
         .then(function (results) {
+            console.log(results);
             let recipe = "";
             let dato = results.recipes;
             for (let i = 0; i < dato.length; i++) {
@@ -32,7 +33,7 @@ function buscarFetch(url) {
         <article class="recipe_card">
         <img class="imagenComida" src="${dato[i].image}" alt="${dato[i].name}">
         <div class="recetas_info">
-        <h3>${dato[i].id}</h3>
+        <h3>${dato[i].name}</h3>
         <p>Dificultad: ${dato[i].difficulty}</p>
         <a href="./detalle.html?idReceta=${dato[i].id}">Ver detalle</a>
         </div>
@@ -44,10 +45,10 @@ function buscarFetch(url) {
             return console.log(error);
         });
 }
-buscarFetch(`https://dummyjson.com/recipes?limit=${limit}&skip=0&select=name,image`)
+buscarFetch(`https://dummyjson.com/recipes?limit=${limit}&skip=0&select=name,image,difficulty`)
 cargar_mas.addEventListener("click", function (e) {
     limit += 10
-    buscarFetch(`https://dummyjson.com/recipes?limit=${limit}&skip=0&select=name,image`);
+    buscarFetch(`https://dummyjson.com/recipes?limit=${limit}&skip=0&select=name,image,difficulty`);
     if (limit == 50) {
         cargar_mas.style.display = "none"
     }
