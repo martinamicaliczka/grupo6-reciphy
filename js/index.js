@@ -11,7 +11,13 @@ formularioIndex.addEventListener("submit", function validar(event) {
         event.preventDefault();
     }
 });
-
+buscar.addEventListener("input", function () {
+    if (this.value.length < 3) {
+        buscar.style.color = "black";
+    } else {
+        buscar.style.color = "#d045ac";
+    }
+});
 //API
 let limit = 10
 let url = (`https://dummyjson.com/recipes?limit=${limit}&skip=0&select=name,image,difficulty`);
@@ -33,9 +39,9 @@ function buscarFetch(url) {
         <article class="recipe_card">
         <img class="imagenComida" src="${dato[i].image}" alt="${dato[i].name}">
         <div class="recetas_info">
-        <h3>${dato[i].name}</h3>
-        <p>Dificultad: ${dato[i].difficulty}</p>
-        <a href="./detalle.html?idReceta=${dato[i].id}">Ver detalle</a>
+        <h3 class="nombreTarjeta" >${dato[i].name}</h3>
+        <p class="dificultadTarjeta">Dificultad: ${dato[i].difficulty}</p>
+        <a class="verDetalle" href="./detalle.html?idReceta=${dato[i].id}">Ver detalle</a>
         </div>
         </article>`;
             }
