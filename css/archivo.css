@@ -9,14 +9,14 @@ body{
   height: 200px;
 }
 .titulo{
-    font-family: "Comfortaa", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400px;
+    font-family: "Emilys Candy", serif;
+    font-weight: 400;
+    font-style: normal;
     font-style: normal;
     display: flex;
     justify-content: center;
     color: #d045ac;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .navegacion{
@@ -31,6 +31,7 @@ body{
     font-optical-sizing: auto;
     font-style: normal;
     color: #d045ac;
+    font-size: 18px;
 
 }
 a{
@@ -41,6 +42,7 @@ a{
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 20px;
+    height: 35px;
 }
 .recetas_seccion{
     display: flex;
@@ -67,13 +69,13 @@ a{
     background: #ffc5f09b;
     margin-bottom: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-
 }
 
 #enviar {
     background-color: #ffc5f0;
     border-color: #d045ac;
     color: #d045ac;
+    width: 65px;
 }
 #cargar_mas{
     background-color: #ffc5f0;
@@ -84,6 +86,7 @@ a{
     border-radius: 10px;
     margin-top: 15px;
     width: 12%;
+    font-size: 18px;
 }
 .principal{
     margin-left: 10px;
@@ -118,4 +121,8 @@ a{
 .padreCargarMas{
     justify-content: center;
     display: flex;
+}
+#buscar{
+    width: 350px;
+    font-size: 18px;
 }

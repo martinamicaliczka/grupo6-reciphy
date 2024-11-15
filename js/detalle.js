@@ -2,10 +2,11 @@ let qs = location.search;
 let qsObj = new URLSearchParams(qs);
 let idReceta = qsObj.get("idReceta");
 
-let nombre          = document.querySelector(".nombre");
+let titulo          = document.querySelector(".titulo");
+let nombreTarjeta   = document.querySelector(".nombreTarjeta");
 let instrucciones   = document.querySelector(".instrucciones");
 let coccion         = document.querySelector(".coccion");
-let image           = document.querySelector(".image");
+let imagenComida    = document.querySelector(".imagenComida");
 let lista           = document.querySelector(".lista");
 let cateoriaLink    = document.querySelector(".categoriaLink");
 
@@ -16,10 +17,10 @@ fetch(url)
 })
 .then(function(results) {
     console.log(results);
-    nombre.innerText=`${results.name}`;
+    nombreTarjeta.innerText=`${results.name}`;
     instrucciones.innerText = `Instrucciones: ${results.instructions}`;
     coccion.innerText=`Tiempo de cocción: ${results.cookTimeMinutes}`;
-    image.src = results.image;
+    imagenComida.src = results.image;
     listita = "";
     let tags=results.tags;
     for (let i = 0; i < tags.length; i++) {
