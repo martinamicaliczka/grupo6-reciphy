@@ -6,7 +6,7 @@ console.log(searchResults);
 let terminos_busqueda = document.querySelector(".terminos_busqueda"); 
 let resultados_busqueda = document.querySelector(".resultados_busqueda");
 
-terminos_busqueda.innerText = `Resultados de busqueda para:${searchResults}`;
+terminos_busqueda.innerText = `Resultados de busqueda para: ${searchResults}`;
 
 fetch(URL)
 .then(function (data) {
@@ -29,7 +29,7 @@ fetch(URL)
             </article>`;
     } }
 if (buscar == ""){
-    resultados_busqueda.innerHTML = `<p>No se encontraron recetas para "${searchResults}"</p>`;
+    resultados_busqueda.innerHTML = `<p>No se encontraron recetas para "${searchResults}".</p>`;
 }
 else{
     resultados_busqueda.innerHTML = buscar;

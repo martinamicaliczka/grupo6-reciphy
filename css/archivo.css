@@ -43,6 +43,7 @@ a{
     justify-content: flex-end;
     margin-right: 20px;
     height: 35px;
+    margin-right: 63.5px;
 }
 .recetas_seccion{
     display: flex;
@@ -56,11 +57,12 @@ a{
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400px;
-    font-style: normal
+    font-style: normal;
+    margin-left: 60px;
     
 }
 .imagenComida{
-    height: 400px;
+    height: 300px;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
 }
@@ -69,6 +71,8 @@ a{
     background: #ffc5f09b;
     margin-bottom: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 #enviar {
@@ -103,7 +107,8 @@ a{
 
 .verDetalle{
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-right: 25px;
     display: flex;
     margin-bottom: 10px;
     color: #d045ac;
@@ -113,10 +118,12 @@ a{
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    background-image: url(../img/bannerinferior.jpg);
+    background-image: url(../img/bannerinferior.png);
     padding: 20px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    font-style: italic;
+    font-weight: bold;
 }
 .padreCargarMas{
     justify-content: center;
