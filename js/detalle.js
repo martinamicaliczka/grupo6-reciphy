@@ -3,7 +3,7 @@ let qsObj = new URLSearchParams(qs);
 let idReceta = qsObj.get("idReceta");
 
 let titulo          = document.querySelector(".titulo");
-let nombreTarjeta   = document.querySelector(".nombreTarjeta");
+let nombreTarjeta2   = document.querySelector(".nombreTarjeta2");
 let instrucciones   = document.querySelector(".instrucciones");
 let coccion         = document.querySelector(".coccion");
 let imagenComida    = document.querySelector(".imagenComida");
@@ -17,7 +17,7 @@ fetch(url)
 })
 .then(function(results) {
     console.log(results);
-    nombreTarjeta.innerText=`${results.name}`;
+    nombreTarjeta2.innerText=`${results.name}`;
     instrucciones.innerText = `Instrucciones: ${results.instructions}`;
     coccion.innerText=`Tiempo de cocción: ${results.cookTimeMinutes}`;
     imagenComida.src = results.image;

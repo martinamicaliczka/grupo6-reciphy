@@ -201,3 +201,16 @@ a{
     margin-left: 78px;
     text-decoration: none;
 }
+.nombreTarjeta2{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.mas_info{
+    display:flex;
+}
+.comida{
+    display:flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
