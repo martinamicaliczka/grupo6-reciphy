@@ -5,11 +5,11 @@ let form = document.querySelector(".form");
 let contravacio = document.querySelector(".contravacio");
 form.addEventListener("submit", function validar(event) {
     if (email.value === "") {
-        mailvacio.innerText = "Por favor complete el campo email";
+        mailvacio.innerText = "Por favor complete el campo";
         event.preventDefault();
     }
     if (contrasennia.value === "") {
-        contravacio.innerText = "Por favor complete el campo contraseña";
+        contravacio.innerText = "Por favor complete el campo";
         event.preventDefault();
     }
 });
