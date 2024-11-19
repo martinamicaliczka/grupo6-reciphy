@@ -133,3 +133,71 @@ a{
     width: 350px;
     font-size: 18px;
 }
+.form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:27%;
+    background-color:#ffc5f09b;
+    align-items:center;
+    height:300px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.formulario{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+}
+.no_cuenta{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 78px;
+    text-decoration: none;
+}
+.ingresar{
+    border-radius: 10px;
+    background-color: #ffc5f0;
+    border-color: #d045ac;
+    color: #d045ac;
+    width: 90px;
+}
+.contrasenia{
+    border-color: #eba0d7;
+}
+.email{
+    border-color: #eba0d7;
+}
+.cuenta{
+    display: flex;
+    justify-content: flex-start;
+    width:100%;
+}
+.terminosycondiciones{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mail{
+    width: 56%;
+    border-color: #eba0d7;
+}
+.contra{
+    width: 56%;
+    border-color: #eba0d7;
+}
+.registro{
+    border-radius: 10px;
+    background-color: #ffc5f0;
+    border-color: #d045ac;
+    color: #d045ac;
+    width: 90px;
+}    
+.tengo_cuenta{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 78px;
+    text-decoration: none;
+}

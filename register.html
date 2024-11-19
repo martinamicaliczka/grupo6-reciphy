@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/archivo.css">
     <title>Registro</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Playwrite+CL:wght@100..400&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="formulario">
-        <h2>Registro</h2>
+        <h1 class="titulo">Registro</h1>
         <form class="form" action="./index.html" method="get">
             <p class="mailvacio"></p>
-            <input type="email" placeholder="Email" name="mail" id="email" value="">
+            <input class="mail" type="email" placeholder="Email" name="mail" id="email" value="">
             <p class="contravacio"></p>
-            <input type="password" placeholder="Contraseña" name="contrasennia" id="contrasennia" value="">
+            <input class="contra" type="password" placeholder="Contraseña" name="contrasennia" id="contrasennia" value="">
             <section class="terminosycondiciones">
                 <input type="checkbox" name="terminos" id="terminos" value="True" checked>
                 <label for="terminos">Acepto términos y condiciones</label>
             </section>
-            <button type="submit">Registrarse</button>
-            <a href="./login.html">Ya tengo cuenta</a>
+            <button class="registro" type="submit">Registrarse</button>
+            <div class="cuenta">
+                <a class="tengo_cuenta" href="./login.html">Ya tengo cuenta</a>
+            </div>
         </form>
     </main>
 
