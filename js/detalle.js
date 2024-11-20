@@ -24,7 +24,7 @@ fetch(url)
     listita = "";
     let tags=results.tags;
     for (let i = 0; i < tags.length; i++) {
-        listita+=`<li><a class="categoriaLink" href="./searchcategorie.html?tag=${tags[i]}">${tags[i]}</a></li>`
+        listita+=`<li><a class="categoriaLink" href="./searchcategorie.html?idTag=${tags[i]}">${tags[i]}</a></li>`
     }
     lista.innerHTML=listita;
 })

@@ -10,13 +10,10 @@ fetch(url)
     listita = "";
 
     for (let i = 0; i < results.length; i++) {
-        listita+=`<li><a class="categoriaLink" href="./searchcategorie.html?tag=${results[i]}">${results[i]}</a></li>`
+        listita+=`<li><a class="categoriaLink" href="./searchcategorie.html?idTag=${results[i]}">${results[i]}</a></li>`
     }
     lista.innerHTML=listita;
 })
 .catch(function(error) {
     return console.log(error);
 });
-
-
-
