@@ -22,7 +22,7 @@ fetch(URL)
             buscar += `
             <article class="recipe_card"> 
                 <img class="imagenComida" src="${dato[i].image}" alt="${dato[i].name}">
-                <div class="recetas_info">
+                  <div class="recetas_info">
                     <h3 class="nombreTarjeta">${dato[i].name}</h3>
                     <a class="verDetalle" href="./detalle.html?idReceta=${dato[i].id}">Ver detalle</a>
                 </div>

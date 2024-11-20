@@ -1,5 +1,6 @@
 body{
     margin: 0%;
+    background-image: url(../img/fondo.png);
 }
 
 .logo{
@@ -243,6 +244,13 @@ a{
     border-bottom-left-radius: 20px;
     margin-bottom: 30px;
 }
+.imagenComida{
+    margin-left: 20px;
+    height: 400px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 30px;
+}
 .instrucciones{
     width: 95%;
 }
@@ -251,3 +259,4 @@ a{
     margin-left: 40px;
     font-size: 17px;
 }
+.
