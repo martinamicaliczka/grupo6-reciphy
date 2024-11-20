@@ -265,7 +265,7 @@ a{
     margin-left: 40px;
     font-size: 17px;
 }
-.nombreTarjeta{
+.nombreTarjeta3{
     display:flex;
     padding-left: 20px;
     width: 100%;
@@ -273,13 +273,11 @@ a{
 .terminos_busqueda{
     padding-left: 20px;
 }
-.verDetalle{
+.verDetalle2{
     display:flex;
     justify-content: flex-start;
     padding-left: 30px;
     padding-bottom: 10px;
+    color: #d045ac;
 }
-.dificultadTarjeta{
-    display:flex;
-    padding-left: 20px;
-}
+

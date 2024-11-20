@@ -23,8 +23,8 @@ fetch(URL)
             <article class="detalle_card"> 
                 <img class="imagenComida2" src="${dato[i].image}" alt="${dato[i].name}">
                   <div class="recetas_info">
-                    <h3 class="nombreTarjeta">${dato[i].name}</h3>
-                    <a class="verDetalle" href="./detalle.html?idReceta=${dato[i].id}">Ver detalle</a>
+                    <h3 class="nombreTarjeta3">${dato[i].name}</h3>
+                    <a class="verDetalle2" href="./detalle.html?idReceta=${dato[i].id}">Ver detalle</a>
                 </div>
             </article>`;
     } }
