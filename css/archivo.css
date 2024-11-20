@@ -41,9 +41,9 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-right: 20px;
     height: 35px;
     margin-right: 63.5px;
+    margin-bottom: 40px;
 }
 .recetas_seccion{
     display: flex;
@@ -80,6 +80,7 @@ a{
     border-color: #d045ac;
     color: #d045ac;
     width: 65px;
+    font-size: 14px;
 }
 #cargar_mas{
     background-color: #ffc5f0;
@@ -99,6 +100,8 @@ a{
 
 .nombreTarjeta{
     margin-left: 10px;
+    text-decoration-line: overline;
+    text-decoration-color: #d045ac;
 }
 
 .dificultadTarjeta{
@@ -143,6 +146,7 @@ a{
     height:300px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 60px;
 }
 .formulario{
     width:100%;
@@ -173,33 +177,39 @@ a{
 }
 .cuenta{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     width:100%;
 }
 .terminosycondiciones{
-    margin-top: 20px;
     margin-bottom: 20px;
+    width: 69%;
 }
 .mail{
-    width: 56%;
+    width: 66%;
+    font-size: 16px;
     border-color: #eba0d7;
 }
 .contra{
-    width: 56%;
+    width: 66%;
+    font-size: 16px;
     border-color: #eba0d7;
+    margin-bottom: 20px;
 }
 .registro{
-    border-radius: 10px;
+    border-radius: 7px;
     background-color: #ffc5f0;
     border-color: #d045ac;
     color: #d045ac;
-    width: 90px;
+    width: 66%;
+    height: 35px;
+    font-size: 15px;
 }    
 .tengo_cuenta{
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 78px;
     text-decoration: none;
+    justify-content: center;
+    display: flex;
 }
 .nombreTarjeta2{
     display: flex;
@@ -213,4 +223,31 @@ a{
     display:flex;
     flex-direction: column;
     margin-left: 20px;
+}
+.ingrese{
+    width: 67%;
+    color:#d045ac;
+}
+.detalle_card{
+    border-radius: 40px;
+    background: #ffc5f09b;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-right: 15px;
+    margin-left: 14px;
+}
+.imagenDetalle{
+    margin-left: 20px;
+    height: 400px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 30px;
+}
+.instrucciones{
+    width: 95%;
+}
+.comidaDetalle{
+    justify-content: center;
+    margin-left: 40px;
+    font-size: 17px;
 }
