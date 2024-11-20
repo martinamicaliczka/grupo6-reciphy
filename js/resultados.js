@@ -20,8 +20,8 @@ fetch(URL)
     for (let i = 0; i < dato.length; i++){
         if (dato[i].name == searchResults){
             buscar += `
-            <article class="recipe_card"> 
-                <img class="imagenComida" src="${dato[i].image}" alt="${dato[i].name}">
+            <article class="detalle_card"> 
+                <img class="imagenComida2" src="${dato[i].image}" alt="${dato[i].name}">
                   <div class="recetas_info">
                     <h3 class="nombreTarjeta">${dato[i].name}</h3>
                     <a class="verDetalle" href="./detalle.html?idReceta=${dato[i].id}">Ver detalle</a>
