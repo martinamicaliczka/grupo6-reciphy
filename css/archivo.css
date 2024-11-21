@@ -7,7 +7,10 @@ body{
   background-color: #ffc5f0;
   display: flex;
   justify-content: center;
-  height: 200px;
+  height: 100%;
+}
+.imgLogo{
+    height: 200px;
 }
 .titulo{
     font-family: "Emilys Candy", serif;
@@ -38,7 +41,7 @@ body{
 a{
     color: black;
 }
-.formularioIndex{
+#formularioIndex{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -328,4 +331,83 @@ a{
 }
 .categoriaLink2{
     text-decoration: none;
+}
+/*ocultar*/
+#formularioIndexCelu{
+    display: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 35px;
+    margin-right: 63.5px;
+    margin-bottom: 40px;
+}
+#buscarCelu{
+    display: none;
+    width: 120px;
+    font-size: 15px;
+    height: 20px;
+}
+#enviarCelu{
+    display: none;
+    background-color: #ffc5f0;
+    border-color: #d045ac;
+    color: #d045ac;
+    width: 65px;
+    font-size: 14px;
+}
+.linkCelu{
+    display: none;
+}
+
+/*responsive*/
+@media (max-width:  390px) {
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    .imgLogo{
+        height: 120px;
+    }
+    #formularioIndexCelu{
+        display: flex;
+        margin-left: 55px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    #buscarCelu{
+        display: flex;
+    }
+    #enviarCelu{
+        display: flex;
+        width: auto;
+        font-size: 15px;
+        height: 26px;
+    }
+    #formularioIndex{
+        display: none;
+    }
+    #Buscar{
+        display: none;
+    }
+    #enviar{
+        display: none;
+    }
+    .link{
+        display: none;
+    }
+    .linkCelu{
+        display: flex;
+    }
+    .imgCelu{
+        height: 20px;
+    }
+    .navegacion{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #ffc5f09c;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
 }

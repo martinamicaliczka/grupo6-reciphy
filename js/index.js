@@ -1,5 +1,5 @@
 //validamos elformulario
-let buscar = document.querySelector("#buscar");
+let buscar = document.querySelector(".buscar");
 let formularioIndex = document.querySelector(".formularioIndex");
 formularioIndex.addEventListener("submit", function validar(event) {
     if (buscar.value === "") {
