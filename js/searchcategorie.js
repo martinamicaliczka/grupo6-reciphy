@@ -25,6 +25,7 @@ fetch(url)
 </article>`;
     }
     recetas_seccion.innerHTML = recipe;
+    tituloCategoria.innerText =  `Categoria: ${idTag}`;
 })
 .catch(function (error) {
     return console.log(error);
