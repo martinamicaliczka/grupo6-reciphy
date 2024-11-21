@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/archivo.css">
     <title>Login</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Playwrite+CL:wght@100..400&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Playwrite+CL:wght@100..400&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="encabezado">
         <div class="logo">
-           <img id="img" src="./img/logo.jpeg" alt="logo">
+           <img id="img" class="imgLogo" src="./img/logo.jpeg" alt="logo">
        </div>
        </header>
        <nav class="navegacion">
            <a class="link" href="./index.html"><strong>Home</strong></strong></a>
+           <a class="linkCelu" href="./index.html" class="homeimg imgCelu"><img class="homeimg imgCelu" src="./img/home.png" alt=""></a>
            <a class="link" href="./categories.html"><strong>Categorias</strong></a>
+           <a class="linkCelu" href="./categories.html"><img class="imgCelu" src="./img/categorias.png" alt=""></a>
            <a class="link" href="./login.html"><strong>Log in</strong></a>
+           <a class="linkCelu" href="./login.html"><img class="imgCelu" src="./img/cuenta.png" alt=""></a>
            <a class="link" href="./register.html"><strong>Registro</strong></a>
        </nav>
-    <h1 class="titulo">Log in</h1>
-    <main class="formulario">
-       <form class="form" action="index.html" method="get">
-            <p class="mailvacio"></p>
-            <input class="mail" type="email" placeholder="Email" name="mail" id="email" value="">
-            <p class="contravacio"></p>
-            <input class="contra" type="password" placeholder="Contraseña" name="contrasennia" id="contrasennia" value="">
-            <button class="registro" type="submit">Ingresá</button>
-            <div class="cuenta">
-                <a class="tengo_cuenta" href="./register.html">No tengo cuenta</a>
-            </div>
-        </form>       
-     </main>
-     <script src="./js/login.js"></script>
+        <h1 class="titulo">Log in</h1>
+        <main class="formulario">
+            <form class="form" action="index.html" method="get">
+                <p class="mailvacio"></p>
+                <input class="mail" type="email" placeholder="Email" name="mail" id="email" value="">
+                <p class="contravacio"></p>
+                <input class="contra" type="password" placeholder="Contraseña" name="contrasennia" id="contrasennia"
+                    value="">
+                <button class="registro" type="submit">Ingresá</button>
+                <div class="cuenta">
+                    <a class="tengo_cuenta" href="./register.html">No tengo cuenta</a>
+                </div>
+            </form>
+        </main>
+        <script src="./js/login.js"></script>
 </body>
+
 </html>

@@ -360,10 +360,11 @@ a{
 }
 
 /*responsive*/
-@media (max-width:  390px) {
+@media (max-width:  391px) {
     .logo{
         display: flex;
         align-items: center;
+        width: 390px;
     }
     .imgLogo{
         height: 120px;
@@ -409,5 +410,55 @@ a{
         background-color: #ffc5f09c;
         padding-left: 35px;
         padding-right: 35px;
+    }
+    .titulo{
+        font-size: 28px;
+    }
+    .recetas_info{
+        font-size: 11px;
+    }
+    .imagenComida{
+        height: 70%;
+    }
+    .recipe_card{
+        height: 300px;
+    }
+    #cargar_mas{
+        width: 30%;
+        font-size: 12px;
+        height: 36px;
+        padding: 0px;
+    }
+    .detalle_card{
+        height: 750px;
+    }
+    .mas_info{
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .comidaDetalle{
+        margin-left: 0px;
+    }
+    .imagenDetalle{
+        height: 300px;
+        margin-left: 0px;
+    }
+    .integrantes{
+        width: 350px;
+    }
+    .ul{
+        padding: 0px;
+    }
+    .form{
+        width: 70%;
+    }
+    .lista li{
+        width: 100px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
