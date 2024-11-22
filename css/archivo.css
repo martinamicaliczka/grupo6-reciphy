@@ -454,6 +454,7 @@ a{
         font-size: 12px;
         height: 36px;
         padding: 0px;
+        margin-bottom: 20px;
     }
     .detalle_card{
         height: 100%;
@@ -470,10 +471,8 @@ a{
     }
     .imagenDetalle{
         height: 300px;
-        margin-left: 0px;
-    }
-    .integrantes{
-        width: 88%;
+        margin-left: 15px;
+        width: 90%;
     }
     .ul{
         padding: 0px;
@@ -493,5 +492,8 @@ a{
     }
     .integrantes{
         margin:0px;
+    }
+    .nombreTarjeta2{
+        font-size: 15px;
     }
 }
