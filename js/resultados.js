@@ -4,7 +4,7 @@ let searchResults = resultados.get("Buscar");
 let URL = `https://dummyjson.com/recipes/search?q=${searchResults}`;
 console.log(searchResults);  
 let terminos_busqueda = document.querySelector(".terminos_busqueda"); 
-let resultados_busqueda = document.querySelector(".resultados_busqueda");
+let recetas_seccion = document.querySelector(".recetas_seccion");
 
 terminos_busqueda.innerText = `Resultados de busqueda para: ${searchResults}`;
 
@@ -18,19 +18,31 @@ fetch(URL)
     let buscar = "";
     let dato =  results.recipes;
     for (let i = 0; i < dato.length; i++){
+        let link = "";
+            if (dato[i].difficulty=="Easy") {
+                link = "./img/estrellaeasy.png"
+            }else if (dato[i].difficulty=="Medium"){
+                link = "./img/estrellamedium.png"
+            }else if (dato[i].difficulty=="High"){
+                link = "./img/estrellahigh.png"
+            }
         buscar += `
-        <article class="detalle_card"> 
-            <img class="imagenComida2" src="${dato[i].image}" alt="${dato[i].name}">
+        <article class="recipe_card"> 
+            <img class="imagenComida" src="${dato[i].image}" alt="${dato[i].name}">
                 <div class="recetas_info">
-                <h3 class="nombreTarjeta3">${dato[i].name}</h3>
-                <a class="verDetalle2" href="./detalle.html?idReceta=${dato[i].id}">Ver detalle</a>
+                <h3 class="nombreTarjeta">${dato[i].name}</h3>
+                <div class="cajaEstrellas">
+             <p class="dificultadTarjeta">Dificultad: </p>
+             <img src="${link}" class="estrellas" alt="">
+        </div>
+                <a class="verDetalle" href="./detalle.html?idReceta=${dato[i].id}">Ver detalle</a>
             </div>
         </article>`;
     }
     if (buscar == ""){
-    resultados_busqueda.innerHTML = `<p class="vacio">No se encontraron recetas para "${searchResults}" :( </p>`
+    recetas_seccion.innerHTML = `<p class="vacio">No se encontraron recetas para "${searchResults}" :( </p>`
     }else{
-    resultados_busqueda.innerHTML = buscar;
+    recetas_seccion.innerHTML = buscar;
 }
 })
 .catch(function (error) {
