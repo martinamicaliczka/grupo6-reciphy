@@ -28,7 +28,7 @@ function buscarFetch(url) {
         <img class="imagenComida" src="${dato[i].image}" alt="${dato[i].name}">
         <div class="recetas_info">
         <h3 class="nombreTarjeta" >${dato[i].name}</h3>
-        <div>
+        <div class="cajaEstrellas">
              <p class="dificultadTarjeta">Dificultad: </p>
              <img src="${link}" class="estrellas" alt="">
         </div>

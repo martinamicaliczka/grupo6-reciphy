@@ -14,12 +14,23 @@ fetch(url)
     let recipe = "";
     let dato = results.recipes;
     for (let i = 0; i < dato.length; i++) {
+        let link = "";
+        if (dato[i].difficulty=="Easy") {
+            link = "./img/estrellaeasy.png"
+        }else if (dato[i].difficulty=="Medium"){
+            link = "./img/estrellamedium.png"
+        }else if (dato[i].difficulty=="High"){
+            link = "./img/estrellahigh.png"
+        }
         recipe += `
 <article class="recipe_card">
 <img class="imagenComida" src="${dato[i].image}" alt="${dato[i].name}">
 <div class="recetas_info">
 <h3 class="nombreTarjeta" >${dato[i].name}</h3>
-<p class="dificultadTarjeta">Dificultad: ${dato[i].difficulty}</p>
+<div class="cajaEstrellas">
+             <p class="dificultadTarjeta">Dificultad: </p>
+             <img src="${link}" class="estrellas" alt="">
+        </div>
 <a class="verDetalle" href="./detalle.html?idReceta=${dato[i].id}">Ver detalle</a>
 </div>
 </article>`;

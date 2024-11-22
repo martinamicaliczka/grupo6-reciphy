@@ -108,6 +108,7 @@ a{
     margin-left: 10px;
     text-decoration-line: overline;
     text-decoration-color: #d045ac;
+    margin-bottom: 0px;
 }
 
 .dificultadTarjeta{
@@ -359,6 +360,20 @@ a{
 .linkCelu{
     display: none;
 }
+.vacio{
+    margin-left: 20px;
+    text-shadow: 2px 2px 2px #eba0d7;    
+}
+.cajaEstrellas{
+    display: flex;
+    align-items: center;
+}
+.estrellas{
+    width: 60px;
+    height: 33px;
+    margin-left: 10px;
+}
+
 
 /*responsive*/
 @media (max-width:  391px) {
@@ -461,8 +476,4 @@ a{
         align-items: center;
         padding: 10px;
     }
-}
-.vacio{
-    margin-left: 20px;
-    text-shadow: 2px 2px 2px #eba0d7;    
 }
