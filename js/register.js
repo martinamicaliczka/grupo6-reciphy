@@ -3,6 +3,8 @@ let email = document.querySelector("#email");
 let contrasennia = document.querySelector("#contrasennia");
 let form = document.querySelector(".form");
 let contravacio = document.querySelector(".contravacio");
+let terminovacio = document.querySelector(".terminovacio");
+let terminos = document.querySelector(".terminos");
 
 form.addEventListener("submit", function validar(event) {
     if (email.value === "") {
@@ -13,4 +15,9 @@ form.addEventListener("submit", function validar(event) {
         contravacio.innerText = "Por favor complete el campo";
         event.preventDefault();
     }
+    if (terminos.checked.value == false) {
+        terminovacio.innerText = "Debe acetar los terminos y condiciones para poder registrarse";
+        event.preventDefault();
+    }
+
 });
