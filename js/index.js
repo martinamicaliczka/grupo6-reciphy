@@ -15,12 +15,22 @@ function buscarFetch(url) {
             let recipe = "";
             let dato = results.recipes;
             for (let i = 0; i < dato.length; i++) {
+                if (dato[i].difficulty=="Easy") {
+                    let link = "./img/estrellaeasy.png"
+                } if (dato[i].difficulty=="Medium"){
+                    let link = "./img/estrellamedium.png"
+                } if (dato[i].difficulty=="High"){
+                    let link = "./img/estrellahigh.png"
+                }
                 recipe += `
         <article class="recipe_card">
         <img class="imagenComida" src="${dato[i].image}" alt="${dato[i].name}">
         <div class="recetas_info">
         <h3 class="nombreTarjeta" >${dato[i].name}</h3>
-        <p class="dificultadTarjeta">Dificultad: ${dato[i].difficulty}</p>
+        <div>
+             <p class="dificultadTarjeta">Dificultad: </p>
+             <img src=${link} class="estrellas">
+        </div>
         <a class="verDetalle" href="./detalle.html?idReceta=${dato[i].id}">Ver detalle</a>
         </div>
         </article>`;

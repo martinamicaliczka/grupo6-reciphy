@@ -285,6 +285,8 @@ a{
     display:flex;
     padding-left: 20px;
     width: 100%;
+    text-decoration: overline;
+    text-decoration-color: #d045ac;
 }
 .terminos_busqueda{
     padding-left: 20px;
@@ -459,4 +461,8 @@ a{
         align-items: center;
         padding: 10px;
     }
+}
+.vacio{
+    margin-left: 20px;
+    text-shadow: 2px 2px 2px #eba0d7;    
 }
