@@ -4,10 +4,11 @@ body{
 }
 
 .logo{
-  background-color: #ffc5f0;
-  display: flex;
-  justify-content: center;
-  height: 100%;
+    background-color: #ffc5f0;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
 }
 .imgLogo{
     height: 200px;
@@ -46,8 +47,7 @@ a{
     flex-direction: row;
     justify-content: flex-end;
     height: 35px;
-    margin-right: 63.5px;
-    margin-bottom: 40px;
+    width: 50%;
 }
 .recetas_seccion{
     display: flex;
@@ -97,7 +97,6 @@ a{
     padding: 15px 30px;
     border-radius: 10px;
     margin-top: 15px;
-    width: 12%;
     font-size: 18px;
 }
 .principal{
@@ -140,7 +139,7 @@ a{
     display: flex;
 }
 #buscar{
-    width: 350px;
+    width: 100%;
     font-size: 18px;
 }
 .form{
@@ -364,15 +363,15 @@ a{
     .logo{
         display: flex;
         align-items: center;
-        width: 390px;
+        width: 100%;
+        justify-content: space-between;
     }
     .imgLogo{
         height: 120px;
     }
     #formularioIndexCelu{
         display: flex;
-        margin-left: 55px;
-        margin-right: 0px;
+        margin-right: 2%;
         margin-bottom: 0px;
     }
     #buscarCelu{
@@ -407,9 +406,9 @@ a{
         justify-content: space-between;
         padding-top: 20px;
         padding-bottom: 20px;
-        background-color: #ffc5f09c;
-        padding-left: 35px;
-        padding-right: 35px;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     .titulo{
         font-size: 28px;
@@ -446,7 +445,7 @@ a{
         margin-left: 0px;
     }
     .integrantes{
-        width: 350px;
+        width: 88%;
     }
     .ul{
         padding: 0px;
@@ -455,10 +454,9 @@ a{
         width: 70%;
     }
     .lista li{
-        width: 100px;
-        height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 10px;
     }
 }

@@ -1,24 +1,4 @@
 //validamos elformulario
-let buscar = document.querySelector(".buscar");
-let formularioIndex = document.querySelector(".formularioIndex");
-formularioIndex.addEventListener("submit", function validar(event) {
-    if (buscar.value === "") {
-        alert("El texto esta vacio");
-        event.preventDefault();
-    }
-    else if (buscar.value.length < 3) {
-        alert("El texto tiene que tener una longitud mayor a 3 caracteres");
-        event.preventDefault();
-    }
-});
-buscar.addEventListener("input", function () {
-    if (this.value.length < 3) {
-        buscar.style.color = "black";
-    } else {
-        buscar.style.color = "#d045ac";
-    }
-});
-//API
 let limit = 10
 let url = (`https://dummyjson.com/recipes?limit=${limit}&skip=0&select=name,image,difficulty`);
 let recetas_seccion = document.querySelector(".recetas_seccion");

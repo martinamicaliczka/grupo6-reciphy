@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reciphy</title>
     <link rel="stylesheet" href="./css/archivo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Playwrite+CL:wght@100..400&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Playwrite+CL:wght@100..400&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="encabezado">
-     <div class="logo">
-        <img id="img" class="imgLogo" src="./img/logo.jpeg" alt="logo">
-    <form class="formularioIndex" id="formularioIndexCelu" action="resultados.html" method="get">
-        <input type="text" name="Buscar" class="buscar" id="buscarCelu" placeholder="Buscar">
-        <button id="enviarCelu" type="submit">Enviar</button> 
-    </form>
-    </div>
+        <div class="logo">
+            <img id="img" class="imgLogo" src="./img/logo.jpeg" alt="logo">
+            <form class="formularioIndex" id="formularioIndex" action="resultados.html" method="get">
+                <input type="text" name="Buscar" class="buscar" id="buscar" placeholder="Buscar">
+                <button id="enviar" type="submit">Enviar</button>
+            </form>
+            <form class="formularioIndex" id="formularioIndexCelu" action="resultados.html" method="get">
+                <input type="text" name="Buscar" class="buscar" id="buscarCelu" placeholder="Buscar">
+                <button id="enviarCelu" type="submit">Enviar</button>
+            </form>
+        </div>
     </header>
     <nav class="navegacion">
         <a class="link" href="./index.html"><strong>Home</strong></strong></a>
-        <a class="linkCelu" href="./index.html" class="homeimg imgCelu"><img class="homeimg imgCelu" src="./img/home.png" alt=""></a>
+        <a class="linkCelu" href="./index.html" class="homeimg imgCelu"><img class="homeimg imgCelu"
+                src="./img/home.png" alt=""></a>
         <a class="link" href="./categories.html"><strong>Categorias</strong></a>
         <a class="linkCelu" href="./categories.html"><img class="imgCelu" src="./img/categorias.png" alt=""></a>
         <a class="link" href="./login.html"><strong>Log in</strong></a>
@@ -32,23 +42,20 @@
         <a class="link" href="./register.html"><strong>Registro</strong></a>
     </nav>
     <h1 class="titulo">Recetas</h1>
-    <form class="formularioIndex" id="formularioIndex" action="resultados.html" method="get">
-        <input type="text" name="Buscar" class="buscar" id="buscar" placeholder="Buscar">
-        <button id="enviar" type="submit">Enviar</button> 
-    </form>
-    
 
-<main class="principal">
-<div class="recetas_seccion">
+    <main class="principal">
+        <div class="recetas_seccion">
 
-</div>
-<div class="padreCargarMas">
-    <button type="button" id="cargar_mas">Cargar Más</button>
-</div>
-</main>
-<footer>
-    <p class="integrantes">Integrantes del equipo: Ema Fresco, Martina Michaliczka y Lola Otzet</p>
-</footer>
-<script src="./js/index.js"></script>
+        </div>
+        <div class="padreCargarMas">
+            <button type="button" id="cargar_mas">Cargar Más</button>
+        </div>
+    </main>
+    <footer>
+        <p class="integrantes">Ema Fresco | Martina Michaliczka | Lola Otzet</p>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/formulariovalidacion.js"></script>
 </body>
+
 </html>
