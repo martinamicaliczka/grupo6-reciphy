@@ -16,6 +16,7 @@ function buscarFetch(url) {
             let recipe = "";
             contador +=1
             let dato = results.recipes;
+            
             for (let i = 0; i < dato.length; i++) {
                 let link = "";
                 if (dato[i].difficulty=="Easy") {
@@ -25,11 +26,20 @@ function buscarFetch(url) {
                 }else if (dato[i].difficulty=="High"){
                     link = "./img/estrellahigh.png"
                 }
+                let nombre = ""
+                if (dato[i].name.length > 30){
+                    for (let x = 0; x < 30; x++) {
+                        nombre += dato[i].name[x]               
+                    }
+                    nombre += "..."
+                }else{
+                    nombre = results.recipes[i].name
+                }
                 recipe += `
         <article class="recipe_card">
         <img class="imagenComida" src="${dato[i].image}" alt="${dato[i].name}">
         <div class="recetas_info">
-        <h3 class="nombreTarjeta" >${dato[i].name}</h3>
+        <h3 class="nombreTarjeta" >${nombre}</h3>
         <div class="cajaEstrellas">
              <p class="dificultadTarjeta">Dificultad: </p>
              <img src="${link}" class="estrellas" alt="">

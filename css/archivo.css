@@ -109,6 +109,7 @@ a{
     text-decoration-line: overline;
     text-decoration-color: #d045ac;
     margin-bottom: 0px;
+    font-size: 17px;
 }
 
 .dificultadTarjeta{
@@ -501,5 +502,8 @@ a{
     }
     .nombreTarjeta2{
         font-size: 15px;
+    }
+    .nombreTarjeta{
+        font-size: 13px;
     }
 }
