@@ -40,7 +40,7 @@ fetch(URL)
         </article>`;
     }
     if (buscar == ""){
-    recetas_seccion.innerHTML = `<p class="vacio">No se encontraron recetas para "${searchResults}" :( </p>`
+    recetas_seccion.innerHTML = `<p class="resultado_vacio">No se encontraron recetas para "${searchResults}" :( </p>`
     }else{
     recetas_seccion.innerHTML = buscar;
 }

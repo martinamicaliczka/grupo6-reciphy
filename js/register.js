@@ -8,15 +8,15 @@ let terminos = document.querySelector("#terminos");
 
 form.addEventListener("submit", function validar(event) {
     if (email.value === "") {
-        mailvacio.innerText = "Por favor complete el campo";
+        mailvacio.innerText = "⚠ Por favor complete el campo";
         event.preventDefault();
     }
     if (contrasennia.value === "") {
-        contravacio.innerText = "Por favor complete el campo";
+        contravacio.innerText = "⚠ Por favor complete el campo";
         event.preventDefault();
     }
     if (terminos.checked == false) {
-        terminovacio.innerText = "Debe acetar los terminos y condiciones para poder registrarse";
+        terminovacio.innerText = "⚠ Debe acetar los terminos y condiciones para poder registrarse";
         event.preventDefault();
     }
 

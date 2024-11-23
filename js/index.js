@@ -1,6 +1,6 @@
 //validamos elformulario
-let skip = 10
-let hay_mas_para_cargar = true;
+let skip = 0
+let contador = 0;
 let url = (`https://dummyjson.com/recipes?limit=10&skip=${skip}&select=name,image,difficulty`);
 let recetas_seccion = document.querySelector(".recetas_seccion");
 let cargar_mas = document.querySelector("#cargar_mas");
@@ -13,10 +13,8 @@ function buscarFetch(url) {
         })
         .then(function (results) {
             console.log(results);
-            if (results.recipes.length < 10){
-                hay_mas_para_cargar = false
-            }
             let recipe = "";
+            contador +=1
             let dato = results.recipes;
             for (let i = 0; i < dato.length; i++) {
                 let link = "";
@@ -41,6 +39,9 @@ function buscarFetch(url) {
         </article>`;
             }
             recetas_seccion.innerHTML += recipe;
+            if (contador == 5) {
+                cargar_mas.style.display = "none"
+            }
         })
         .catch(function (error) {
             return console.log(error);
@@ -50,7 +51,4 @@ buscarFetch(`https://dummyjson.com/recipes?limit=10&skip=${skip}&select=name,ima
 cargar_mas.addEventListener("click", function (e) {
     skip += 10
     buscarFetch(`https://dummyjson.com/recipes?limit=10&skip=${skip}&select=name,image,difficulty`);
-    if (!hay_mas_para_cargar) {
-        cargar_mas.style.display = "none"
-    }
 })

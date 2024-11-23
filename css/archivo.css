@@ -370,7 +370,7 @@ a{
 .linkCelu{
     display: none;
 }
-.vacio{
+.resultado_vacio{
     margin-left: 20px;
     text-shadow: 2px 2px 2px #eba0d7;    
 }
@@ -383,7 +383,13 @@ a{
     height: 33px;
     margin-left: 10px;
 }
-
+.vacio{
+    color: #d045ac;
+    text-shadow: 2px 2px 2px #eba0d7;    
+}
+.terminovacio{
+    margin-bottom: 0px;
+}
 
 /*responsive*/
 @media (max-width:  391px) {
