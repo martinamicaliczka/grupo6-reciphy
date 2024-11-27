@@ -19,7 +19,7 @@ fetch(url)
     console.log(results);
     nombreTarjeta2.innerText=`${results.name}`;
     instrucciones.innerHTML = `<strong>Instrucciones:</strong> ${results.instructions}`;
-    coccion.innerHTML=`<strong>Tiempo de cocción:</strong> ${results.cookTimeMinutes}`;
+    coccion.innerHTML=`<strong>Tiempo de cocción:</strong> ${results.cookTimeMinutes} minutos`;
     imagenComida.src = results.image;
     listita = "";
     let tags=results.tags;

@@ -129,6 +129,7 @@ a{
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    margin-bottom: 0px;
     background-image: url(../img/bannerinferior.png);
     padding: 20px;
     border-top-left-radius: 30px;
@@ -154,7 +155,7 @@ a{
     height:300px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    margin-bottom: 60px;
+    margin-bottom: 142px;
     height: 100%;
 }
 .formulario{
@@ -302,6 +303,7 @@ a{
 }
 .terminos_busqueda{
     padding-left: 20px;
+    font-size: 28px;
 }
 .verDetalle2{
     display:flex;
@@ -372,8 +374,9 @@ a{
     display: none;
 }
 .resultado_vacio{
-    margin-left: 20px;
     text-shadow: 2px 2px 2px #eba0d7;    
+    font-size: 23px;
+    margin-bottom: 280px;
 }
 .cajaEstrellas{
     display: flex;
@@ -390,6 +393,10 @@ a{
 }
 .terminovacio{
     margin-bottom: 0px;
+}
+.destacable{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
 }
 
 /*responsive*/
@@ -499,6 +506,7 @@ a{
     }
     .integrantes{
         margin:0px;
+
     }
     .nombreTarjeta2{
         font-size: 15px;
