@@ -7,9 +7,13 @@ form.addEventListener("submit", function validar(event) {
     if (email.value === "") {
         mailvacio.innerText = "⚠ Por favor complete el campo email";
         event.preventDefault();
+    }else{
+        mailvacio.innerText = "";
     }
     if (contrasennia.value === "") {
         contravacio.innerText = "⚠ Por favor complete el campo contraseña";
         event.preventDefault();
+    }else{
+        contravacio.innerText = "";
     }
 });

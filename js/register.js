@@ -10,14 +10,20 @@ form.addEventListener("submit", function validar(event) {
     if (email.value === "") {
         mailvacio.innerText = "⚠ Por favor complete el campo";
         event.preventDefault();
+    }else{
+        mailvacio.innerText = "";
     }
     if (contrasennia.value === "") {
         contravacio.innerText = "⚠ Por favor complete el campo";
         event.preventDefault();
+    }else{
+        contravacio.innerText = "";
     }
     if (terminos.checked == false) {
         terminovacio.innerText = "⚠ Debe acetar los terminos y condiciones para poder registrarse";
         event.preventDefault();
+    }else{
+        terminovacio.innerText = "";
     }
 
 });

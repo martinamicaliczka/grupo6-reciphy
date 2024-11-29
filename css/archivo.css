@@ -389,7 +389,8 @@ a{
 }
 .vacio{
     color: #d045ac;
-    text-shadow: 2px 2px 2px #eba0d7;    
+    text-shadow: 2px 2px 2px #eba0d7;  
+    text-align: center;  
 }
 .terminovacio{
     margin-bottom: 0px;
@@ -410,28 +411,21 @@ a{
     .imgLogo{
         height: 120px;
     }
-    #formularioIndexCelu{
+    #formularioIndex{
         display: flex;
         margin-right: 2%;
         margin-bottom: 0px;
-    }
-    #buscarCelu{
-        display: flex;
-    }
-    #enviarCelu{
-        display: flex;
-        width: auto;
-        font-size: 15px;
-        height: 26px;
-    }
-    #formularioIndex{
-        display: none;
+        height: 56%;
     }
     #Buscar{
-        display: none;
+        display: flex;
     }
     #enviar{
-        display: none;
+        display: flex;
+        width: 21%;
+        font-size: 15px;
+        height: 27px;
+        justify-content: center;
     }
     .link{
         display: none;
