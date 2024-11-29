@@ -86,8 +86,9 @@ a{
     background-color: #ffc5f0;
     border-color: #d045ac;
     color: #d045ac;
-    width: 65px;
-    font-size: 14px;
+    width: 62px;
+    font-size: 24px;
+    padding: 0px;
 }
 #cargar_mas{
     background-color: #ffc5f0;
@@ -347,7 +348,6 @@ a{
 .categoriaLink2{
     text-decoration: none;
 }
-/*ocultar*/
 #formularioIndexCelu{
     display: none;
     flex-direction: row;
